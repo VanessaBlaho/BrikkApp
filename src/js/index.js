@@ -155,4 +155,3 @@ const displaySpecificProperty2 = (details) => {
 fetchSpecificProperty2 ();
 
 
-
