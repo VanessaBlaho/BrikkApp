@@ -2,30 +2,73 @@ h1{
     text-align: center;
     color:gray
 }
-/* style.scss */
+
 
 .propertyContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 5%;
+    margin-bottom: 1%;
+    height: 25%;
+    border-top: 0.1px solid gray;
+    padding: 1%;
   
   }
   
   .propertyBox {
-    border: 1px solid #ccc;
-    height: 4rem;
+    // border: 1px solid #ccc;
+    height: 90%;
     width: 8rem; /* Adjust width based on your layout */
     box-sizing: border-box;
+    position: relative;
+    margin-right: .1%;
     p{
         font-size: 12px;
     }
- 
+    img{
+        height:50%;
+    }
+
   }
-  
-  button {
-    margin-top: 10px;
+  .letterACircle {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 255, 0, 0.3); /* Green color with light opacity */
+    border-radius: 50%; /* To create a circle */
+    width: 30px; /* Adjust the width and height based on your design */
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Text color */
+    font-weight: bold; /* Bold text */
   }
+  .letterBCircle {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 255, 0, 0.3); /* Green color with light opacity */
+    border-radius: 50%; /* To create a circle */
+    width: 30px; /* Adjust the width and height based on your design */
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Text color */
+    font-weight: bold; /* Bold text */
+  }
+  .propertyBox_A {
+    border: 8px solid rgba(55, 220, 57, 0.31);
+   
+    
+ }
+ .propertyBox_B{
+    border: 8px solid rgba(55, 220, 57, 0.31);
+ }
+    
   
   img {
     width: 100%;
@@ -45,29 +88,86 @@ h1{
         height: 90%;
         width: 50%;
         margin-right: 2%;
+        border: 1px solid #ccc;
+        border-radius: 2%;
+        padding: 1% 1% 8% 1%;
         img{
             height: 50%;
         }
-            // .property-price{
-            //     display: flex;
-            //     justify-content: space-between;
-            // }
-            // .property-location{
-            //     display: flex;
-            //     justify-content: space-between;
-            // }
+       
     }
     .propertyB{
         height: 90%;
         width: 50%;
-        background-color:green;
+        margin-right: 2%;
+        border: 1px solid #ccc;
+        border-radius: 2%;
+        padding: 1% 1% 8% 1%;
+        img{
+            height: 50%;
+        }
+        .property-info-item-price {
+            display: flex;
+            justify-content: space-between;
+            height:2rem;
+            padding: 0% 2% 2% 2%;
+            background-color: rgb(223, 75, 75);
+          }
+          .property-info-item-floor-area{
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(223, 75, 75);
+            padding: 0% 2% 0% 2%;
+          }
+          .property-info-item-land-area{
+            display: flex;
+            justify-content: space-between;
+            background-color:  rgb(39, 195, 39);
+            padding: 0% 2% 0% 2%;
+        }
+       
     }
 
     .property-info {
         display: flex;
         flex-direction: column;
+        margin-top: -1rem;
     }
         .property-info-item {
           display: flex;
           justify-content: space-between;
+          height:2rem;
+        }
+        .property-info-item-land-area{
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(223, 75, 75);
+            padding: 0% 2% 0% 2%;
+        }
+        .property-info-item-price {
+            display: flex;
+            justify-content: space-between;
+            height:2rem;
+            padding: 0% 2% 2% 2%;
+            background-color: rgb(39, 195, 39);
+          }
+          .property-info-item-floor-area{
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(39, 195, 39);
+            padding: 0% 2% 0% 2%;
+          }
+        .property-info-name{
+            margin-bottom: 0;
+        }
+        .property-info-item-img{
+            display: flex;
+            width: 80%;
+            p{
+                font-size: 12px;
+            }
+            img{
+                width: 22%;
+                margin-right: 5%;
+            }
         }
