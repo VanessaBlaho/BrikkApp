@@ -39,28 +39,28 @@ const createPropertyBox = (property,isSpecialStyleA,isSpecialStyleB) => {
   const box = document.createElement('div');
   box.classList.add('propertyBox');
 
-  // Add property details to the box (customize as needed)
+ 
   box.innerHTML = `
     <img src="${property.images[0]}" alt="Property Name">
     <p>${property.name_extracted} ${property.locality} </p>
   `;
 
   if (isSpecialStyleA) {
-    // Create a circle element for the letter "A" if it's a special style
+   
     const letterACircle = document.createElement('div');
     letterACircle.classList.add('letterACircle');
     letterACircle.textContent = 'A';
 
-    // Append the circle element to the propertyBox
+    
     box.appendChild(letterACircle);
   }
   if (isSpecialStyleB) {
-    // Create a circle element for the letter "A" if it's a special style
+    
     const letterBCircle = document.createElement('div');
     letterBCircle.classList.add('letterACircle');
     letterBCircle.textContent = 'B';
 
-    // Append the circle element to the propertyBox
+   
     box.appendChild(letterBCircle);
   }
 
