@@ -7,5 +7,5 @@ This JavaScript project fetches property data from an external API, displays a l
 <ol>
 <li><b>index.html</b>: The main HTML file.</li>
 <li><b>styles.scss</b>: CSS file for styling.</li>
-<li><b>index.js</b>b>: JavaScript file for fetching data and managing property display logic.</li>
+<li><b>index.js</b>: JavaScript file for fetching data and managing property display logic.</li>
 </ol>
